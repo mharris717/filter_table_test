@@ -1,4 +1,3 @@
-import Em from 'ember';
 import Filtertable from 'ember-cli-filtertable/components/filter-table';
 import PagedArray from 'ember-cli-pagination/local/paged-array';
 
@@ -17,7 +16,7 @@ export default Filtertable.extend({
     //   this.set("filteredRecords",filtered);
     // }
 
-    filtered = PagedArray.create({content: filtered, perPage: 2});
+    filtered = PagedArray.create({content: filtered, perPage: 5});
     this.set("filteredRecords",filtered);
 
     console.debug("my loadRecords end");
