@@ -3,20 +3,3 @@
                columnNum=2
                viewLimit=999
                filterField="author"}}
-
-<hr>
-
-{{#each pagedContent}}
-  <h3>{{title}}</h3>
-  <span class="author">By {{author}}</span>
-
-  <br><br>
-
-  <div class="body">
-    {{body}}
-  </div>
-
-  <br>
-{{/each}}
-
-{{page-numbers content=pagedContent}}
