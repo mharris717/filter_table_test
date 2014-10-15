@@ -20,7 +20,7 @@
 {{else}}{{#if hasNoFilteredRecords}}
   <tr><td {{bind-attr colspan=headerFilterColspan}}><span class="label label-warning">Note:</span> No records match your filter</td></tr>
 {{else}}
-{{#each r in filteredRecords}}
+{{#each r in pagedRecords}}
   <tr>
   {{#if showCheckboxes}}
   <td>{{input type="checkbox" name="r.selected" checked=r.selected}}</td>
@@ -34,4 +34,4 @@
 
 {{!-- everything above this is unchanged --}}
 
-{{page-numbers content=filteredRecords}}
+{{page-numbers content=pagedRecords}}
